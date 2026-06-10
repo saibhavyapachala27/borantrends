@@ -17,7 +17,7 @@ export default function Home({
   const [showAdvancedFilters, setShowAdvancedFilters] = useState(false);
 
   // Categories list derived from seed data
-  const categories = ['All', 'Bhagy Jeans', 'Formal Bhagys', 'Formal Shirts', 'T-Shirts', 'Down Shoulder', 'Formal Pants', 'Linen Edit'];
+  const categories = ['All', 'Baggy Jeans', 'Formal Baggies', 'Formal Shirts', 'T-Shirts', 'Down Shoulder', 'Formal Pants', 'Linen Edit'];
 
   // Filter products based on selected branch and filters
   const filteredProducts = products.filter(product => {
@@ -83,7 +83,7 @@ export default function Home({
               <span className="text-gradient-gold">modern man.</span>
             </h2>
             <p className="hero-desc">
-              Premium crafted denim, pleated formalwear, and French linen designed for India's most discerning gentlemen. Shop live inventory and order directly on WhatsApp.
+              Crafted denim, formal essentials, and linen made for India's most discerning gentlemen. Now across Bhongir, Mothkur & Jangaon.
             </p>
             <div className="btn-group">
               <a href="#catalog" className="btn-gold">Shop Collection</a>
@@ -102,9 +102,10 @@ export default function Home({
       </section>
 
       {/* Marquee Banner */}
-      <div style={{ background: '#121216', borderY: '1px solid rgba(255,255,255,0.05)', padding: '20px 0', overflow: 'hidden' }}>
-        <div style={{ display: 'flex', gap: 50, whiteSpace: 'nowrap', animation: 'marquee 25s linear infinite', fontSize: 20, fontFamily: 'var(--font-display)', fontStyle: 'italic', opacity: 0.8 }}>
-          <span>Bhagy Jeans ✦ Formal Bhagys ✦ Down Shoulder Tees ✦ Linen Shirts ✦ Slim Fit Khakis ✦ Selvedge Denim ✦ Minimalist Essentials</span>
+      <div className="marquee-container">
+        <div className="marquee-content">
+          <span>Baggy Jeans ✦ Formal Baggies ✦ Baggy Shirts ✦ Formal Pants ✦ Linen Pants ✦ Down Shoulder ✦ T-Shirts ✦ Formal Shirts ✦ &nbsp;</span>
+          <span>Baggy Jeans ✦ Formal Baggies ✦ Baggy Shirts ✦ Formal Pants ✦ Linen Pants ✦ Down Shoulder ✦ T-Shirts ✦ Formal Shirts ✦ &nbsp;</span>
         </div>
       </div>
 

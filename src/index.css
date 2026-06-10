@@ -432,6 +432,40 @@ button {
   background: rgba(212, 175, 55, 0.05);
 }
 
+/* Marquee Banner */
+.marquee-container {
+  background: #121216;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+  font-size: 24px;
+  font-family: var(--font-display);
+  font-style: italic;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+.marquee-content span {
+  padding-right: 50px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* Category Grid Slider */
 .section-title-wrap {
   display: flex;

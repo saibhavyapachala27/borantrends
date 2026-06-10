@@ -1147,10 +1147,10 @@ export default function Admin({
                         <option value="T-Shirts">T-Shirts</option>
                         <option value="Formal Shirts">Formal Shirts</option>
                         <option value="Down Shoulder">Down Shoulder</option>
-                        <option value="Bhagy Jeans">Bhagy Jeans</option>
+                        <option value="Baggy Jeans">Baggy Jeans</option>
                         <option value="Formal Pants">Formal Pants</option>
                         <option value="Linen Edit">Linen Edit</option>
-                        <option value="Formal Bhagys">Formal Bhagys</option>
+                        <option value="Formal Baggies">Formal Baggies</option>
                       </select>
                     </div>
                   </div>

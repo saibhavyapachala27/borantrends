@@ -19,8 +19,7 @@ export const supabase = !isMockMode ? createClient(supabaseUrl, supabaseAnonKey)
 const INITIAL_BRANCHES = [
   { id: 'b1', name: 'Bhongir', whatsapp_number: '+919876543210', is_active: true },
   { id: 'b2', name: 'Mothkur', whatsapp_number: '+918765432109', is_active: true },
-  { id: 'b3', name: 'Jangaon', whatsapp_number: '+917654321098', is_active: true },
-  { id: 'b4', name: 'Uppal', whatsapp_number: '+919876543210', is_active: true }
+  { id: 'b3', name: 'Jangaon', whatsapp_number: '+917654321098', is_active: true }
 ];
 
 const INITIAL_PRODUCTS = [
@@ -77,10 +76,10 @@ const INITIAL_PRODUCTS = [
   },
   {
     id: 'p5',
-    name: 'Bhagy Relaxed Jeans — Vintage Blue',
+    name: 'Baggy Relaxed Jeans — Vintage Blue',
     description: 'Thick Japanese selvedge denim in a relaxed fit with fading detail along the seams.',
     price: 1899,
-    category: 'Bhagy Jeans',
+    category: 'Baggy Jeans',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     image_urls: [
       'https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&auto=format&fit=crop',
@@ -114,10 +113,10 @@ const INITIAL_PRODUCTS = [
   },
   {
     id: 'p8',
-    name: 'Formal Bhagys Pleated',
+    name: 'Formal Baggies Pleated',
     description: 'Luxurious high-waisted pleated trousers styled for sharp, retro-modern silhouettes.',
     price: 2199,
-    category: 'Formal Bhagys',
+    category: 'Formal Baggies',
     sizes: ['M', 'L', 'XL', 'XXL'],
     image_urls: [
       'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&auto=format&fit=crop'
@@ -156,16 +155,7 @@ const INITIAL_INVENTORY = [
   { id: 'i22', branch_id: 'b3', product_id: 'p6', quantity: 0, price_override: null },
   { id: 'i23', branch_id: 'b3', product_id: 'p7', quantity: 5, price_override: null },
   { id: 'i24', branch_id: 'b3', product_id: 'p8', quantity: 15, price_override: null },
-
-  // Uppal (b4)
-  { id: 'i25', branch_id: 'b4', product_id: 'p1', quantity: 25, price_override: null },
-  { id: 'i26', branch_id: 'b4', product_id: 'p2', quantity: 12, price_override: null },
-  { id: 'i27', branch_id: 'b4', product_id: 'p3', quantity: 20, price_override: null },
-  { id: 'i28', branch_id: 'b4', product_id: 'p4', quantity: 15, price_override: null },
-  { id: 'i29', branch_id: 'b4', product_id: 'p5', quantity: 18, price_override: null },
-  { id: 'i30', branch_id: 'b4', product_id: 'p6', quantity: 8, price_override: null },
-  { id: 'i31', branch_id: 'b4', product_id: 'p7', quantity: 22, price_override: null },
-  { id: 'i32', branch_id: 'b4', product_id: 'p8', quantity: 10, price_override: null }
+  // End of Inventory
 ];
 
 const getLocalStorageItem = (key, initialValue) => {
